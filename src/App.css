@@ -61,7 +61,7 @@ textarea{
 placeholder{
   color: #272d3b;
 }
-.scroll-container {
+.scroll-container{
   display: flex;
   width: 100%;
   padding: 20px 0;
@@ -80,9 +80,41 @@ placeholder{
 @media screen and (max-width: 700px){
   .scroll-content{
     height: 300px;
+    margin: 0;
+  }
+  .header{
+    padding: 4%;
   }
   input, textarea{
     padding: 5px;
+  }
+  
+  .scrollContent h1{
+    font-size: 16px;
+    padding-bottom: 2px;
+  }
+  .stack h3{
+    font-size: 8px;
+  }
+  .stack{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .scrollContent h3{
+    font-size: 12px;
+  }
+  .box{
+    width: 65vw;
+  }
+  .scroll-container{
+    width: 100%;
+  }
+  .buttons{
+    flex-direction: column;
+    margin-top: 1px;
+  }
+  .scrollContent button{
+    padding: 5px 8px;
   }
 }
 .scroll-content > div > img{
@@ -96,7 +128,7 @@ placeholder{
   color: #FF0000;
 }
 .stack > h3{
-  font-size: 1p6x;
+  font-size: 16px;
   font-weight: 500;
   padding-right: 20px;
 }

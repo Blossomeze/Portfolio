@@ -22,10 +22,10 @@ function Projects() {
           <hr className='border-2 border-white w-[50px] ml-2' />
         </div>
       </div>
-      <div className='flex scroll-container mt-[4%] justify-between'>
-        <div className='scrollContent w-[25vw] bg-white rounded-xl text-primary'>
+      <div className='flex overflow-x-scroll scroll-container mt-[4%] lg:justify-between'>
+        <div className='scrollContent box lg:w-[25vw] bg-white rounded-xl text-primary'>
           <img className='rounded-t-xl h-[50%] aspect-auto' src={netflix} alt='netflix clone demo' />
-          <div className='h-[200px] text-left px-5 '>
+          <div className='h-[200px] box text-left px-5 '>
             <h1 className='font-bold text-2xl py-3'>Netflix Clone</h1>
             <div className='stack flex flex-wrap mb-[2%]'>
               <h3><span>#</span>ReactJS</h3>
@@ -52,9 +52,9 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className='w-[25vw] scrollContent bg-white rounded-xl text-primary'>
-          <img className='rounded-t-xl h-[50%] aspect-auto border-b-primary border-b-[1px]' src={ui} alt='netflix clone demo' />
-          <div className='h-[200px] text-left px-5 '>
+        <div className='scrollContent box lg:w-[25vw] bg-white rounded-xl text-primary'>
+          <img className='rounded-t-xl h-[50%] aspect-auto' src={ui} alt='netflix clone demo' />
+          <div className='h-[200px] box text-left px-5 '>
             <h1 className='font-bold text-2xl py-3'>100Day UI</h1>
             <div className='stack flex flex-wrap mb-[2%]'>
               <h3><span>#</span>Javascript</h3>
@@ -79,20 +79,19 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className='w-[25vw] scrollContent bg-white rounded-xl text-primary'>
-          <img className='rounded-t-xl h-[60%] aspect-auto' src={moviebox} alt='netflix clone demo' />
-          <div className='h-[200px] text-left px-4 '>
+        <div className='scrollContent box lg:w-[25vw] bg-white rounded-xl text-primary'>
+          <img className='rounded-t-xl h-[50%] aspect-auto w-[110%]' src={moviebox} alt='netflix clone demo' />
+          <div className='h-[200px] box text-left px-5 '>
             <h1 className='font-bold text-2xl py-3'>MovieBox</h1>
             <div className='stack flex flex-wrap mb-[2%]'>
-              <h3><span>#</span>React</h3>
+              <h3><span>#</span>TailwindCSS</h3>
               <h3><span>#</span>MUI</h3>
               <h3><span>#</span>Axios</h3>
               <h3><span>#</span>TMDB API</h3>
-              <h3><span>#</span>TailwindCSS</h3>
+              <h3><span>#</span>React</h3>
             </div>
-            <div className='w-full text-center'>
             <div className='w-full text-center flex justify-between px-[5%]'>
-              <button
+            <button
                 className='bg-primary text-center text-sm lg:text-base text-white font-medium rounded-lg px-[10px] py-[5px] my-5'
                 onClick={() => openWebsite('')}
                 type='button'
@@ -105,7 +104,6 @@ function Projects() {
                 type='button'>
                   Code Src
                 </button>
-            </div>
             </div>
           </div>
         </div>
