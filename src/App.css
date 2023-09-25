@@ -72,6 +72,7 @@ placeholder{
 }
 .scrollContent{
   margin-right: 40px;
+  height: 360px;
 }
 .scroll-content {
   display: flex;
@@ -88,7 +89,9 @@ placeholder{
   input, textarea{
     padding: 5px;
   }
-  
+  .scrollContent img{
+    max-height: 44%;
+  }
   .scrollContent h1{
     font-size: 16px;
     padding-bottom: 2px;

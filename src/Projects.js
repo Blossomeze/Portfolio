@@ -53,7 +53,7 @@ function Projects() {
           </div>
         </div>
         <div className='scrollContent box lg:w-[25vw] bg-white rounded-xl text-primary'>
-          <img className='rounded-t-xl h-[50%] aspect-auto' src={ui} alt='netflix clone demo' />
+          <img className='rounded-t-xl h-[50%] aspect-auto' src={ui} alt='100 day demo' />
           <div className='h-[200px] box text-left px-5 '>
             <h1 className='font-bold text-2xl py-3'>100Day UI</h1>
             <div className='stack flex flex-wrap mb-[2%]'>
@@ -80,7 +80,7 @@ function Projects() {
           </div>
         </div>
         <div className='scrollContent box lg:w-[25vw] bg-white rounded-xl text-primary'>
-          <img className='rounded-t-xl h-[50%] aspect-auto w-[110%]' src={moviebox} alt='netflix clone demo' />
+          <img className='rounded-t-xl h-[50%] aspect-auto' src={moviebox} alt='movie box demo' />
           <div className='h-[200px] box text-left px-5 '>
             <h1 className='font-bold text-2xl py-3'>MovieBox</h1>
             <div className='stack flex flex-wrap mb-[2%]'>
