@@ -1,6 +1,7 @@
 import React from 'react';
 import netflix from './assets/netflix.jpg';
 import moviebox from './assets/moviebox.PNG'
+import ui from './assets/ui.jpg'
 
 function Projects() {
   const openWebsite = (websiteUrl) => {
@@ -31,10 +32,10 @@ function Projects() {
               <h3><span>#</span>TailwindCSS</h3>
               <h3><span>#</span>Redux</h3>
               <h3><span>#</span>Axios</h3>
-              <h3><span>#</span>MUI</h3>
               <h3><span>#</span>API</h3>
+              <h3><span>#</span>Firebase</h3>
             </div>
-            <div className='w-full text-center'>
+            <div className='w-full text-center flex justify-between px-[5%]'>
               <button
                 className='bg-primary text-center text-sm lg:text-base text-white font-medium rounded-lg px-[10px] py-[5px] my-5'
                 onClick={() => openWebsite('https://netflix-blossom.vercel.app/')}
@@ -42,53 +43,44 @@ function Projects() {
               >
                 Live Site
               </button>
+              <button
+                className='bg-white border-primary  border-2 text-center text-sm lg:text-base text-primary font-medium rounded-lg px-[10px] py-[5px] my-5'
+                onClick={() => openWebsite('https://github.com/Blossomeze/Netflix_2.0.git')}
+                type='button'>
+                  Code Src
+                </button>
             </div>
           </div>
         </div>
         <div className='w-[25vw] scrollContent bg-white rounded-xl text-primary'>
-          <img className='rounded-t-xl h-[50%] aspect-auto' src={netflix} alt='netflix clone demo' />
+          <img className='rounded-t-xl h-[50%] aspect-auto border-b-primary border-b-[1px]' src={ui} alt='netflix clone demo' />
           <div className='h-[200px] text-left px-5 '>
-            <h1 className='font-bold text-2xl py-3'>Recipe Finder</h1>
+            <h1 className='font-bold text-2xl py-3'>100Day UI</h1>
             <div className='stack flex flex-wrap mb-[2%]'>
-              <h3><span>#</span>ReactJS</h3>
-              <h3><span>#</span>TailwindCSS</h3>
-              <h3><span>#</span>Edamam API</h3>
-              <h3><span>#</span>MUI</h3>
+              <h3><span>#</span>Javascript</h3>
+              <h3><span>#</span>CSS</h3>
+              <h3><span>#</span>HTML</h3>
+              <h3><span>#</span>Figma</h3>
             </div>
-            <div className='w-full text-center'>
+            <div className='w-full text-center flex justify-between px-[5%]'>
               <button
                 className='bg-primary text-center text-sm lg:text-base text-white font-medium rounded-lg px-[10px] py-[5px] my-5'
-                onClick={() => openWebsite('URL_FOR_SECOND_PROJECT')}
+                onClick={() => openWebsite('https://100-day-ui-blossom.netlify.app/')}
                 type='button'
               >
                 Live Site
               </button>
-            </div>
-          </div>
-        </div>
-        <div className='w-[25vw] scrollContent bg-white rounded-xl text-primary'>
-          <img className='rounded-t-xl h-[50%] aspect-auto' src={netflix} alt='netflix clone demo' />
-          <div className='h-[200px] text-left px-5 '>
-            <h1 className='font-bold text-2xl py-3'>Amazon Clone</h1>
-            <div className='stack flex flex-wrap mb-[2%]'>
-              <h3><span>#</span>ReactJS</h3>
-              <h3><span>#</span>TailwindCSS</h3>
-              <h3><span>#</span>Ecommerce</h3>
-              <h3><span>#</span>MUI</h3>
-            </div>
-            <div className='w-full text-center'>
               <button
-                className='bg-primary text-center text-sm lg:text-base text-white font-medium rounded-lg px-[10px] py-[5px] my-5'
-                onClick={() => openWebsite('URL_FOR_THIRD_PROJECT')}
-                type='button'
-              >
-                Live Site
-              </button>
+                className='bg-white border-primary  border-2 text-center text-sm lg:text-base text-primary font-medium rounded-lg px-[10px] py-[5px] my-5'
+                onClick={() => openWebsite('https://github.com/Blossomeze/30-days-UI.git')}
+                type='button'>
+                  Code Src
+                </button>
             </div>
           </div>
         </div>
         <div className='w-[25vw] scrollContent bg-white rounded-xl text-primary'>
-          <img className='rounded-t-xl h-[50%] aspect-auto' src={moviebox} alt='netflix clone demo' />
+          <img className='rounded-t-xl h-[60%] aspect-auto' src={moviebox} alt='netflix clone demo' />
           <div className='h-[200px] text-left px-4 '>
             <h1 className='font-bold text-2xl py-3'>MovieBox</h1>
             <div className='stack flex flex-wrap mb-[2%]'>
@@ -99,13 +91,21 @@ function Projects() {
               <h3><span>#</span>TailwindCSS</h3>
             </div>
             <div className='w-full text-center'>
+            <div className='w-full text-center flex justify-between px-[5%]'>
               <button
                 className='bg-primary text-center text-sm lg:text-base text-white font-medium rounded-lg px-[10px] py-[5px] my-5'
-                onClick={() => openWebsite('https://moviebox-blossom.web.app/')}
+                onClick={() => openWebsite('')}
                 type='button'
               >
                 Live Site
               </button>
+              <button
+                className='bg-white border-primary  border-2 text-center text-sm lg:text-base text-primary font-medium rounded-lg px-[10px] py-[5px] my-5'
+                onClick={() => openWebsite('')}
+                type='button'>
+                  Code Src
+                </button>
+            </div>
             </div>
           </div>
         </div>
