@@ -15,6 +15,9 @@ function Projects() {
           <hr className='border-2 border-white w-[50px] ml-2' />
         </div>
       </div>
+      <div>
+        
+      </div>
     </div>
   );
 }

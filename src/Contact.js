@@ -16,20 +16,20 @@ function Contact() {
           <hr className='border-2 border-primary w-[50px] ml-1' />
         </div>
       </div>
-      <div className='flex justify-between py-[3%] px-[8%]'>
+      <div className='flex flex-col lg:flex-row justify-between py-[3%] px-[8%]'>
         <div>
-        <img className='w-[40vw]' src={contact} alt="illustration" />
+        <img className='lg:w-[40vw]' src={contact} alt="illustration" />
         </div>
-        <div className=' w-[35vw] text-left'>
+        <div className=' lg:w-[35vw] text-left px-7 lg:px-0'>
             <h3 className='pb-2 font-medium'>Message Me</h3>
             <form className='flex flex-col'>
                 <span className='flex justify-between'>
-                  <input type='text' placeholder='Name' />
-                    <input type='email' placeholder='Email' />  
+                  <input className='w-[48%]' type='text' placeholder='Name' />
+                    <input className='w-[48%]' type='email' placeholder='Email' />  
                 </span>
                 <input type='text' placeholder='Subject' />
                 <textarea placeholder='Message..' />
-                <button className='bg-primary mx-[20%] text-white font-medium rounded-lg px-[20px] py-[8px] my-5' type='submit'>Let's get to work🚀🚀</button>
+                <button className='bg-primary mx-[15%] lg:mx-[20%] text-sm lg:text-base text-white font-medium rounded-lg px-[20px] py-[8px] my-5' type='submit'>Let's get to work🚀🚀</button>
             </form>
         </div>
       </div>

@@ -34,7 +34,7 @@ function Skills() {
       </div>
       <div className='scroll-container overflow-x-scroll items-center'>
         <div className='scroll-content'>
-          <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl w-[22vw] p-[1%] mr-5 object-containS'>
+          <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-containS'>
             <img className='w-[500px]' src={basics} alt='illustration' />
             <div className='w-full flex flex-col items-center pt-5'>
               <h3 className='text-xl font-semibold text-primary'>Basics</h3>
@@ -43,7 +43,7 @@ function Skills() {
           </div>
         </div>
         <div className='scroll-content'>
-          <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[22vw] p-[1%] mr-5 object-contain'>
+          <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-contain'>
             <img className='w-[500px]' src={styling} alt='illustration' />
             <div className='w-full flex flex-col items-center pt-5'>
               <h3 className='text-xl font-semibold text-primary'>Styling</h3>
@@ -57,7 +57,7 @@ function Skills() {
           </div>
         </div>
         <div className='scroll-content'>
-          <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[22vw] p-[1%] mr-5 object-contain'>
+          <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-contain'>
             <img className='w-[400px] p-10' src={frameworks} alt='illustration' />
             <div className='w-full flex flex-col items-center pt-5'>
               <h3 className='text-xl font-semibold text-primary'>Frameworks</h3>
@@ -69,7 +69,7 @@ function Skills() {
           </div>
         </div>
         <div className='scroll-content'>
-          <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[22vw] p-[1%] mr-5 object-contain'>
+          <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-contain'>
             <img className='w-[500px]' src={dev} alt='illustration' />
             <div className='w-full flex flex-col items-center pt-5'>
               <h3 className='text-xl font-semibold text-primary'>Development</h3>
@@ -82,7 +82,7 @@ function Skills() {
           </div>
         </div>
         <div className='scroll-content'>
-          <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[22vw] p-[1%] mr-5 object-contain'>
+          <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-contain'>
             <img className='w-[500px]' src={api} alt='illustration' />
             <div className='w-full flex flex-col items-center pt-5'>
               <h3 className='text-xl font-semibold text-primary'>API</h3>

@@ -38,15 +38,15 @@ function Banner() {
   }, [index]);
 
   return (
-    <div className="flex justify-between pt-[2%] mx-[5%] ml-[10%] text-primary">
-      <div className="pt-[19%]">
-        <h3 className='text-3xl'>Hello, my name is</h3>
-        <h1 className='text-[75px] font-bold leading-none'>Blossom Eze</h1>
-        <h3 className='text-4xl leading-10 pt-2 flex items-center' >
+    <div className="lg:flex justify-between pt-[2%] mx-[5%] ml-[10%] text-primary">
+      <div className="lg:pt-[19%] pt-[30%]">
+        <h3 className='text-xl lg:text-3xl'>Hello, my name is</h3>
+        <h1 className='text-5xl lg:text-[75px] font-bold leading-none'>Blossom Eze</h1>
+        <h3 className='text-2xl lg:text-4xl leading-10 lg:pt-2 flex items-center' >
           and I'm a <span className='text-secondary pl-[10px]'>{text}</span>
           <span className={showCursor ? 'cursor' : ''}>|</span>
         </h3>
-        <button className='bg-secondary text-white font-medium rounded-lg px-[22px] py-[10px] my-5'>Hire Me</button>
+        <button className='bg-secondary my-3 text-white font-medium rounded-lg px-[22px] py-[10px] lg:my-5'>Hire Me</button>
       </div>
       <div>
         <img
