@@ -27,6 +27,7 @@ function Projects() {
           <img className='rounded-t-xl h-[50%] aspect-auto' src={netflix} alt='netflix clone demo' />
           <div className='h-[200px] box text-left px-5 '>
             <h1 className='font-bold text-2xl py-3'>Netflix Clone</h1>
+            <div>
             <div className='stack flex flex-wrap mb-[2%]'>
               <h3><span>#</span>ReactJS</h3>
               <h3><span>#</span>TailwindCSS</h3>
@@ -47,9 +48,11 @@ function Projects() {
                 className='bg-white border-primary  border-2 text-center text-sm lg:text-base text-primary font-medium rounded-lg px-[10px] py-[5px] my-5'
                 onClick={() => openWebsite('https://github.com/Blossomeze/Netflix_2.0.git')}
                 type='button'>
-                  Code Src
+                  Code Link
                 </button>
             </div>
+            </div>
+            
           </div>
         </div>
         <div className='scrollContent box lg:w-[25vw] bg-white rounded-xl text-primary'>
@@ -62,7 +65,7 @@ function Projects() {
               <h3><span>#</span>HTML</h3>
               <h3><span>#</span>Figma</h3>
             </div>
-            <div className='w-full text-center flex justify-between px-[5%]'>
+            <div className='w-full text-center flex justify-between px-[5%] lg:mt-0 mt-[29px]'>
               <button
                 className='bg-primary text-center text-sm lg:text-base text-white font-medium rounded-lg px-[10px] py-[5px] my-5'
                 onClick={() => openWebsite('https://100-day-ui-blossom.netlify.app/')}
@@ -74,7 +77,7 @@ function Projects() {
                 className='bg-white border-primary  border-2 text-center text-sm lg:text-base text-primary font-medium rounded-lg px-[10px] py-[5px] my-5'
                 onClick={() => openWebsite('https://github.com/Blossomeze/30-days-UI.git')}
                 type='button'>
-                  Code Src
+                  Code Link
                 </button>
             </div>
           </div>
@@ -102,7 +105,7 @@ function Projects() {
                 className='bg-white border-primary  border-2 text-center text-sm lg:text-base text-primary font-medium rounded-lg px-[10px] py-[5px] my-5'
                 onClick={() => openWebsite('')}
                 type='button'>
-                  Code Src
+                  Code Link
                 </button>
             </div>
           </div>

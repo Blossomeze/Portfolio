@@ -1,9 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import CV from './assets/resume.pdf'
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 function About() {
+
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = CV;
+    link.target = '_blank';
+    link.download = './assets/resume.pdf';
+    link.click();
+  };
+
     const phrases = ["Frontend Developer", "Content Creator", "Technical Writer", "Community Manager"];
     const [index, setIndex] = useState(0);
     const [text, setText] = useState("");
@@ -65,7 +75,7 @@ function About() {
             <a href="https://www.linkedin.com/in/blossom-eze-76146923a" target="_blank" > <LinkedInIcon /> </a>
             <a href="https://github.com/Blossomeze" target="_blank"><GitHubIcon /> </a> 
             <a href="https://twitter.com/Blossomeze_?t=i23-k_nqhvKbwELA8DUAyw&s=09" target="_blank"><TwitterIcon /></a></h1>
-            <button className='bg-secondary text-white font-medium rounded-lg  lg:mr-[70%] px-[3%] mr-[62%] py-[2%] lg:px-[26px] lg:py-[13px] my-5'>Download CV</button>
+            <button onClick={handleDownloadCV} className='bg-secondary text-white font-medium rounded-lg  lg:mr-[70%] px-[3%] mr-[62%] py-[2%] lg:px-[26px] lg:py-[13px] my-5'>Download CV</button>
         </div>
       </div>
     </div>

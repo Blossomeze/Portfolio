@@ -37,6 +37,10 @@ function Banner() {
     };
   }, [index]);
 
+    const handleContactButtonClick = () => {
+    window.location.href = 'mailto:bryk.defi@gmail.com';
+  };
+
   return (
     <div className="lg:flex justify-between pt-[2%] mx-[5%] ml-[10%] text-primary">
       <div className="lg:pt-[19%] pt-[30%]">
@@ -46,7 +50,7 @@ function Banner() {
           and I'm a <span className='text-secondary pl-[10px]'>{text}</span>
           <span className={showCursor ? 'cursor' : ''}>|</span>
         </h3>
-        <button className='bg-secondary my-3 text-white font-medium rounded-lg px-[22px] py-[10px] lg:my-5'>Hire Me</button>
+        <button onClick={handleContactButtonClick} className='bg-secondary my-3  text-white font-medium rounded-lg px-[22px] py-[10px] lg:my-5'>Hire Me</button>
       </div>
       <div>
         <img
