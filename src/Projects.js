@@ -96,14 +96,14 @@ function Projects() {
             <div className='w-full text-center flex justify-between px-[5%]'>
             <button
                 className='bg-primary text-center text-sm lg:text-base text-white font-medium rounded-lg px-[10px] py-[5px] my-5'
-                onClick={() => openWebsite('')}
+                onClick={() => openWebsite('https://moviebox-blossom.web.app/')}
                 type='button'
               >
                 Live Site
               </button>
               <button
                 className='bg-white border-primary  border-2 text-center text-sm lg:text-base text-primary font-medium rounded-lg px-[10px] py-[5px] my-5'
-                onClick={() => openWebsite('')}
+                onClick={() => openWebsite('https://github.com/Blossomeze/movieBox')}
                 type='button'>
                   Code Link
                 </button>
