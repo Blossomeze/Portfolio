@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+.header{
+  color: #272d3b;
+  position: fixed;
+  display: flex;
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+  width: 100vw;
+  padding: 1% ; 
+  backdrop-filter: blur(10px);
+  justify-content: space-between;
+  z-index: 2;
+  padding: 1% 5%;
+  align-items: center;
+  left: 0;
+  right: 0;
+}
+.header a{
+  padding: 0 9%;
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: underline;
+  font-weight: 500;
+  transform: scale(1.08);
+  transition: all ease-in-out 0.8s;
+  color: #FF0000;
+}
+.mui a:hover{
+  color: #272d3b;
+  text-decoration: none;
+} 
+.css-i4bv87-MuiSvgIcon-root{
+  font-size: 30px !important;
+  margin-right: 5px;
+}
+.css-i4bv87-MuiSvgIcon-root:hover{
+  transform: scale(1.1) !important;
+  transition: 1s all ease-in-out !important;
+}
+input, textarea{
+  border: 1px solid #d3d3d3;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 5%;
+}
+textarea{
+  height: 25vh;
+  margin-bottom: 1.5%;
+}
+placeholder{
+  color: #272d3b;
+}
+.scroll-container {
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
+  align-items: center;
+}
+.scroll-container::-webkit-scrollbar{
+  display: none;
+}
+.scroll-content {
+  display: flex;
+  height: 400px;
+}
+.scroll-content > div > img{
+  max-height: 250px;
+}
+.scroll-content:hover{
+  transform: scale(1.03);
+  transition: 500ms all ease-in-out;
+}
