@@ -70,6 +70,9 @@ placeholder{
 .scroll-container::-webkit-scrollbar{
   display: none;
 }
+.scrollContent{
+  margin-right: 40px;
+}
 .scroll-content {
   display: flex;
   height: 400px;
@@ -85,7 +88,15 @@ placeholder{
 .scroll-content > div > img{
   max-height: 250px;
 }
-.scroll-content:hover{
+.scroll-content:hover, .scrollContent:hover{
   transform: scale(1.03);
   transition: 500ms all ease-in-out;
+}
+.stack > h3 > span{
+  color: #FF0000;
+}
+.stack > h3{
+  font-size: 1p6x;
+  font-weight: 500;
+  padding-right: 20px;
 }
