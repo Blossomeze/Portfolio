@@ -16,30 +16,29 @@ import dev from './assets/dev.png'
 import redux from './assets/redux.webp'
 import axios from './assets/axios.webp'
 import api from './assets/api.png'
-import Tada from 'react-reveal/Tada';
-import { Slide } from 'react-reveal';
+import { Slide, JackInTheBox } from 'react-awesome-reveal';
 
 function Skills() {
   return (
     <div className='p-[5%] bg-primary text-white text-center relative'>
-      <Tada>
+      <JackInTheBox>
         <h2 className='text-2xl leading-5 text-white'>
           Tech Stack
         </h2>
-      </Tada>
+      </JackInTheBox>
       <div className='inset-x-0 bottom-1/2 mb-8'>
         <div className='flex items-center justify-center'>
           <hr className='border-2 border-white w-[50px] mr-1' />
-          <Tada>
+          <JackInTheBox>
             <span className='text-lg px-1 text-secondary'>
               What I Know
             </span>
-          </Tada>
+          </JackInTheBox>
           <hr className='border-2 border-white w-[50px] ml-1' />
         </div>
       </div>
       <div className='scroll-container overflow-x-scroll items-center'>
-        <Slide right>
+        <Slide>
           <div className='scroll-content'>
             <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-containS'>
               <img className='w-[500px]' src={basics} alt='illustration' />
@@ -50,7 +49,7 @@ function Skills() {
             </div>
           </div>
         </Slide>
-        <Slide right>
+        <Slide>
           <div className='scroll-content'>
             <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-contain'>
               <img className='w-[500px]' src={styling} alt='illustration' />
@@ -66,7 +65,7 @@ function Skills() {
             </div>
           </div>
         </Slide>
-        <Slide right>
+        <Slide>
           <div className='scroll-content'>
             <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-contain'>
               <img className='w-[400px] p-10' src={frameworks} alt='illustration' />
@@ -80,7 +79,7 @@ function Skills() {
             </div>
           </div>
         </Slide>
-        <Slide right>
+        <Slide>
           <div className='scroll-content'>
             <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-contain'>
               <img className='w-[500px]' src={dev} alt='illustration' />
@@ -95,7 +94,7 @@ function Skills() {
             </div>
           </div>
         </Slide>
-        <Slide right>
+        <Slide>
           <div className='scroll-content'>
             <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-contain'>
               <img className='w-[500px]' src={api} alt='illustration' />

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Bounce, Zoom, Slide, Fade } from 'react-reveal';
-import RubberBand from 'react-reveal/RubberBand';
-import Pulse from 'react-reveal/Pulse';
+import { Bounce, Zoom, Slide, Fade } from 'react-awesome-reveal';
 
 function Banner() {
   const phrases = ["Frontend Developer", "Content Creator", "Technical Writer", "Community Manager"];
@@ -59,19 +57,19 @@ function Banner() {
             <span className={showCursor ? 'cursor' : ''}>|</span>
           </h3>
         </Bounce>
-        <RubberBand>
+        <Zoom>
           <button onClick={handleContactButtonClick} className='bg-secondary my-3  text-white font-medium rounded-lg px-[22px] py-[10px] lg:my-5'>Hire Me</button>
-        </RubberBand>
+        </Zoom>
         
       </div>
       <div>
-        <Pulse>
+        <Zoom>
           <img
             className="w-[100%]"
             src="https://img.freepik.com/premium-photo/head-shot-memoji-girl_916191-48893.jpg?size=626&ext=jpg&ga=GA1.2.583394399.1695495175"
             alt="memoji"
           /> 
-        </Pulse>
+        </Zoom>
       </div>
     </div>
   );

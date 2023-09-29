@@ -2,8 +2,8 @@ import React from 'react';
 import netflix from './assets/netflix.jpg';
 import moviebox from './assets/moviebox.PNG'
 import ui from './assets/ui.jpg'
-import { Slide } from 'react-reveal';
-import Tada from 'react-reveal/Tada';
+import { Slide } from 'react-awesome-reveal';
+import JackInTheBox from 'react-awesome-reveal';
 
 function Projects() {
   const openWebsite = (websiteUrl) => {
@@ -12,19 +12,19 @@ function Projects() {
 
   return (
     <div className='p-[5%] bg-primary text-white text-center relative'>
-      <Tada>
+      <JackInTheBox>
         <h2 className='text-2xl leading-5 text-white'>
           My Projects
         </h2>
-      </Tada>
+      </JackInTheBox>
       <div className='inset-x-0 bottom-1/2'>
         <div className='flex items-center justify-center'>
           <hr className='border-2 border-white w-[50px] mr-2' />
-          <Tada>
+          <JackInTheBox>
             <span className='text-lg px-1 text-secondary'>
               What I've built
             </span>
-          </Tada>
+          </JackInTheBox>
           <hr className='border-2 border-white w-[50px] ml-2' />
         </div>
       </div>
