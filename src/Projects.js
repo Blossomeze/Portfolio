@@ -39,7 +39,7 @@ function Projects() {
             <div className='w-full text-center flex justify-between px-[5%]'>
               <button
                 className='bg-primary text-center text-sm lg:text-base text-white font-medium rounded-lg px-[10px] py-[5px] my-5'
-                onClick={() => openWebsite('https://netflix-blossom.vercel.app/')}
+                onClick={() => openWebsite('https://netflix-blossom.web.app/')}
                 type='button'
               >
                 Live Site
