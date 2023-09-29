@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { Bounce, Zoom, Slide, Fade } from 'react-reveal';
+import RubberBand from 'react-reveal/RubberBand';
+import Pulse from 'react-reveal/Pulse';
 
 function Banner() {
   const phrases = ["Frontend Developer", "Content Creator", "Technical Writer", "Community Manager"];
@@ -44,20 +47,31 @@ function Banner() {
   return (
     <div className="lg:flex justify-between pt-[2%] mx-[5%] ml-[10%] text-primary">
       <div className="lg:pt-[19%] pt-[30%]">
-        <h3 className='text-xl lg:text-3xl'>Hello, my name is</h3>
-        <h1 className='text-5xl lg:text-[75px] font-bold leading-none'>Blossom Eze</h1>
-        <h3 className='text-2xl lg:text-4xl leading-10 lg:pt-2 flex items-center' >
-          and I'm a <span className='text-secondary pl-[10px]'>{text}</span>
-          <span className={showCursor ? 'cursor' : ''}>|</span>
-        </h3>
-        <button onClick={handleContactButtonClick} className='bg-secondary my-3  text-white font-medium rounded-lg px-[22px] py-[10px] lg:my-5'>Hire Me</button>
+        <Slide left>
+          <h3 className='text-xl lg:text-3xl'>Hello, my name is</h3>
+        </Slide>
+        <Fade clear>
+          <h1 className='text-5xl lg:text-[75px] font-bold leading-none'>Blossom Eze</h1>
+        </Fade>
+        <Bounce>
+          <h3 className='text-2xl lg:text-4xl leading-10 lg:pt-2 flex items-center' >
+            and I'm a <Zoom clear><span className='text-secondary pl-[10px]'>{text}</span></Zoom>
+            <span className={showCursor ? 'cursor' : ''}>|</span>
+          </h3>
+        </Bounce>
+        <RubberBand>
+          <button onClick={handleContactButtonClick} className='bg-secondary my-3  text-white font-medium rounded-lg px-[22px] py-[10px] lg:my-5'>Hire Me</button>
+        </RubberBand>
+        
       </div>
       <div>
-        <img
-          className="w-[100%]"
-          src="https://img.freepik.com/premium-photo/head-shot-memoji-girl_916191-48893.jpg?size=626&ext=jpg&ga=GA1.2.583394399.1695495175"
-          alt="memoji"
-        />
+        <Pulse>
+          <img
+            className="w-[100%]"
+            src="https://img.freepik.com/premium-photo/head-shot-memoji-girl_916191-48893.jpg?size=626&ext=jpg&ga=GA1.2.583394399.1695495175"
+            alt="memoji"
+          /> 
+        </Pulse>
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import contact from './assets/contact.png'
+import RubberBand from 'react-reveal/RubberBand';
+import { Slide } from 'react-reveal';
 
 function Contact() {
   const form = useRef();
@@ -45,9 +47,12 @@ function Contact() {
         </div>
       </div>
       <div className='flex flex-col lg:flex-row justify-between py-[3%] px-[8%]'>
-        <div>
-        <img className='lg:w-[40vw]' src={contact} alt="illustration" />
-        </div>
+        <Slide left>
+          <div>
+            <img className='lg:w-[40vw]' src={contact} alt="illustration" />
+          </div>
+        </Slide>
+        <Slide right>
         <div className=' lg:w-[35vw] text-left px-7 lg:px-0'>
             <h3 className='pb-2 font-medium'>Message Me</h3>
             <form className='flex flex-col' ref={form} onSubmit={sendEmail}>
@@ -81,9 +86,12 @@ function Contact() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 />
-                <button className='bg-primary mx-[15%] lg:mx-[20%] text-sm lg:text-base text-white font-medium rounded-lg px-[20px] py-[8px] my-5' type="submit" value="Send" >Let's get to work🚀🚀</button>
+                <RubberBand>
+                  <button className='bg-primary mx-[15%] lg:mx-[20%] text-sm lg:text-base text-white font-medium rounded-lg px-[20px] py-[8px] my-5' type="submit" value="Send" >Let's get to work🚀🚀</button>
+                </RubberBand>
             </form>
         </div>
+        </Slide>
       </div>
       <div className='bg-primary text-white py-1 flex justify-center'>
         <h4 className='flex items-center font-light'>Created by Blossom | &copy; 2023 All rights reserved.</h4>
