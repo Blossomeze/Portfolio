@@ -1,9 +1,9 @@
 import React from 'react';
-import netflix from './assets/netflix.jpg';
 import moviebox from './assets/moviebox.PNG'
 import ui from './assets/ui.jpg'
 import { Slide } from 'react-awesome-reveal';
 import JackInTheBox from 'react-awesome-reveal';
+import gee from './assets/gee.JPG'
 
 function Projects() {
   const openWebsite = (websiteUrl) => {
@@ -31,22 +31,19 @@ function Projects() {
       <div className='flex overflow-x-scroll scroll-container mt-[4%] lg:justify-between'>
         <Slide left>
           <div className='scrollContent box lg:w-[25vw] bg-white rounded-xl text-primary'>
-            <img className='rounded-t-xl h-[50%] aspect-auto' src={netflix} alt='netflix clone demo' />
+            <img className='rounded-t-xl h-[50%] aspect-auto' src={gee} alt='netflix clone demo' />
             <div className='h-[200px] box text-left px-5 '>
-              <h1 className='font-bold text-2xl py-3'>Netflix Clone</h1>
+              <h1 className='font-bold text-2xl py-3'>Godswill Akpan</h1>
               <div>
               <div className='stack flex flex-wrap mb-[2%]'>
                 <h3><span>#</span>ReactJS</h3>
-                <h3><span>#</span>TailwindCSS</h3>
-                <h3><span>#</span>Redux</h3>
-                <h3><span>#</span>Axios</h3>
-                <h3><span>#</span>API</h3>
-                <h3><span>#</span>Firebase</h3>
+                <h3><span>#</span>CSS</h3>
+                <h3><span>#</span>State Management</h3>
               </div>
               <div className='w-full text-center flex justify-between px-[5%]'>
                 <button
                   className='bg-primary text-center text-sm lg:text-base text-white font-medium rounded-lg px-[10px] py-[5px] my-5'
-                  onClick={() => openWebsite('https://netflix-blossom.web.app/')}
+                  onClick={() => openWebsite('https://gee-akpan-ftld.vercel.app/')}
                   type='button'
                 >
                   Live Site

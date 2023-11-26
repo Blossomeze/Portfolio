@@ -16,7 +16,7 @@ import dev from './assets/dev.png'
 import redux from './assets/redux.webp'
 import axios from './assets/axios.webp'
 import api from './assets/api.png'
-import { Slide, JackInTheBox } from 'react-awesome-reveal';
+import { JackInTheBox } from 'react-awesome-reveal';
 
 function Skills() {
   return (
@@ -38,7 +38,6 @@ function Skills() {
         </div>
       </div>
       <div className='scroll-container overflow-x-scroll items-center'>
-        <Slide>
           <div className='scroll-content'>
             <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-containS'>
               <img className='w-[500px]' src={basics} alt='illustration' />
@@ -48,8 +47,6 @@ function Skills() {
               </div>
             </div>
           </div>
-        </Slide>
-        <Slide>
           <div className='scroll-content'>
             <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-contain'>
               <img className='w-[500px]' src={styling} alt='illustration' />
@@ -64,8 +61,6 @@ function Skills() {
               </div>
             </div>
           </div>
-        </Slide>
-        <Slide>
           <div className='scroll-content'>
             <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-contain'>
               <img className='w-[400px] p-10' src={frameworks} alt='illustration' />
@@ -78,8 +73,6 @@ function Skills() {
               </div>
             </div>
           </div>
-        </Slide>
-        <Slide>
           <div className='scroll-content'>
             <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-contain'>
               <img className='w-[500px]' src={dev} alt='illustration' />
@@ -93,8 +86,6 @@ function Skills() {
               </div>
             </div>
           </div>
-        </Slide>
-        <Slide>
           <div className='scroll-content'>
             <div className='bg-white flex flex-col justify-between py-[8%] rounded-xl my-0 w-[50vw] lg:w-[22vw] p-[1%] mr-5 object-contain'>
               <img className='w-[500px]' src={api} alt='illustration' />
@@ -107,8 +98,6 @@ function Skills() {
               </div>
             </div>
           </div>
-        </Slide>
-
       </div>
     </div>
   );

@@ -60,7 +60,6 @@ function Banner() {
         <Zoom>
           <button onClick={handleContactButtonClick} className='bg-secondary my-3  text-white font-medium rounded-lg px-[22px] py-[10px] lg:my-5'>Hire Me</button>
         </Zoom>
-        
       </div>
       <div>
         <Zoom>
